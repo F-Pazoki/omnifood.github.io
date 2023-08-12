@@ -1,0 +1,266 @@
+/* 85.4*16px=> width<=1366px */
+
+@media (max-width: 85.4em) {
+  .testimpnial-container {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .primary-header {
+    font-size: 4.4rem;
+  }
+
+  .secondary-header {
+    font-size: 3.6rem;
+  }
+
+  .tertiary-header {
+    font-size: 2.4rem;
+  }
+}
+
+/* 1200px */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56%;
+  }
+
+  .grid {
+    row-gap: 6.4rem;
+    column-gap: 3.2rem;
+  }
+
+  .section-hero {
+    padding: 9rem 4.8rem;
+  }
+
+  .testimonoal {
+    row-gap: 6.4rem;
+    column-gap: 3.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header {
+    padding: 0 6.8rem;
+  }
+}
+
+/* 940px */
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .hero-img {
+    width: 50%;
+  }
+
+  .delivered-meals,
+  .btns-hero {
+    justify-content: center;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 60fr 30fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text {
+    padding: 3.2rem;
+  }
+
+  .btn--cta {
+    margin-top: 1.6rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .pricing-plan--complete::after {
+    right: -11%;
+  }
+
+  /* mobile nav bar */
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-item a:link,
+  .nav-item a:visited {
+    font-size: 2.4rem;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.94);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    /* transform: translateX(100%); */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 300ms;
+  }
+
+  .nav-mobile-btns {
+    display: block;
+  }
+
+  .open-nav ion-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .open-nav ion-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .open-nav .navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(0);
+  }
+}
+
+/* 754px */
+@media (max-width: 47em) {
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .meals {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-plans {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-plan {
+    width: 75%;
+    justify-self: center;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .policy {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+}
+
+/* 472px */
+@media (max-width: 30em) {
+  .hero-img {
+    width: 70%;
+  }
+
+  .step-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .responsive-img--half {
+    max-width: 45%;
+  }
+
+  .step-img-box {
+    transform: translateY(4.8rem);
+  }
+
+  .meals {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pricing-plan--complete::after {
+    content: "";
+    background: none;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img {
+    grid-row: 1;
+    height: 30rem;
+  }
+}
+
+/* 374px */
+@media (max-width: 24em) {
+  html {
+    /* 7/16 */
+    font-size: 43%;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.5rem 1rem;
+  }
+
+  .logos img {
+    height: 1.4rem;
+  }
+}
